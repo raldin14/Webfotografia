@@ -1,6 +1,7 @@
 body{
     background-color: #02010a; 
     font-family: 'Dancing Script', cursive;
+    font-size: .5cm;
 }
 header{
     background: #5b7989;
@@ -60,9 +61,12 @@ header #menu-principal{
 footer{
     display: flex;
     background: #C6d5c5;
-    border-radius: 0 0 10px 10px;  
-    overflow: hidden;
+    border-radius: 0 0 10px 10px; 
 }
 footer section[id^=column]{
-    margin: 2%;
+    margin-left: 2%;
+}
+
+#column3 img{
+    width: 20px;
 }
