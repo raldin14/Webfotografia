@@ -1,5 +1,6 @@
 body{
     background-color: #02010a; 
+    font-family: 'Dancing Script', cursive;
 }
 header{
     background: #5b7989;
@@ -9,22 +10,29 @@ header{
 header h1{
     color: white;
     text-shadow: 2px #02010a;
+    float: left;
+    margin-left: 10px;
 }
 header li{
     list-style-type: none;
     display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 0.5cm;
 }
 header a{
     text-decoration: none;
-    color: white;          
+    color: white !important;          
 }
 header #menu-principal{
     float: right;
-    position: relative;
 }
 #imagen-principal{
     text-align: center;
     background-color:  #82c3a6;
+}
+#imagen-principal img{
+    margin: 5vh 0;
 }
 #imagen-secundaria{
     text-align: center;
@@ -45,9 +53,16 @@ header #menu-principal{
     width: 900px;
     margin: 0 20% 0 20%;
 }
+.contenido a{
+    color: black;
+    text-decoration: none;
+}
 footer{
     display: flex;
     background: #C6d5c5;
     border-radius: 0 0 10px 10px;  
     overflow: hidden;
+}
+footer section[id^=column]{
+    margin: 2%;
 }
