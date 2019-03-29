@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web de Fotografía</title>
     <style>
+        body{
+            background-color: #02010a; 
+        }
         header{
             background: #5b7989;
             border-radius: 10px 10px 0 0; 
@@ -31,29 +34,52 @@
             text-align: center;
             background-color:  #82c3a6;
         }
+        #imagen-secundaria{
+            text-align: center;
+            display: flex;
+            background-color: #d5c75f;
+            border: solid 1px black;
+        }
+        #imagen-secundaria div{
+            width: 50%;
+        }
+
+        #imagen-secundaria img{
+            width: 80%;
+            margin: 0 auto;
+            
+        }
+        .contenido{
+            width: 900px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Comenzando con la fotografía</h1>
-        <navbar id="menu-principal">
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="paisajes.html">Paisajes</a></li>
-                <li><a href="retratos.html">Retratos</a></li>
-            </ul>
-        </navbar>
-    </header>
-    <section id="imagen-principal">
-        <img src="img/imagen4.jpg">
-    </section>
-    <section>
-        <div>
-            <img src="img/imagen2.jpg" alt="Paisajes">
-        </div>
-        <div>
-            <img src="img/imagen2.jpg" alt="Retratos">
-        </div>
-    </section>
+    <div class="contenido">
+        <header>
+            <h1>Comenzando con la fotografía</h1>
+            <navbar id="menu-principal">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="paisajes.html">Paisajes</a></li>
+                    <li><a href="retratos.html">Retratos</a></li>
+                </ul>
+            </navbar>
+        </header>
+        <section id="imagen-principal">
+            <img src="img/imagen4.jpg">
+        </section>
+        <section id="imagen-secundaria">
+            <div>
+                <img src="img/imagen2.jpg" alt="Paisajes">
+            </div>
+            <div>
+                <img src="img/imagen2.jpg" alt="Retratos">
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
