@@ -3,6 +3,9 @@ body{
     font-family: 'Dancing Script', cursive;
     font-size: .5cm;
 }
+body img{
+    box-shadow: 2px #02010a;
+}
 header{
     background: #5b7989;
     border-radius: 10px 10px 0 0; 
@@ -34,18 +37,20 @@ header #menu-principal{
 }
 #imagen-principal img{
     margin: 5vh 0;
+    width: 80%;
 }
-#imagen-secundaria{
+#galeria-image{
     text-align: center;
     display: flex;
     background-color: #d5c75f;
 }
-#imagen-secundaria div{
+#galeria-image div{
     width: 50%;
     margin: 5vh 0;
 }
 
-#imagen-secundaria img{
+#galeria-image img{
+    height: 200px;
     width: 80%;
     margin: 0 auto;
     border: solid 1px black;          
@@ -69,4 +74,43 @@ footer section[id^=column]{
 
 #column3 img{
     width: 20px;
+}
+
+#paisaje:hover{
+    transform: rotate(10deg);
+    box-shadow: #82c3a6;
+    border: 2px;
+}
+
+#restrato:hover{
+    transform: translate(20px,-5px);
+    box-shadow: #82c3a6;
+    border: 2px;
+}
+
+.contenedor {
+	display: flex;
+    flex-direction: row;
+    background-color: #d5c75f;
+}
+.contenedor img{	
+    width: 100%;
+}
+.contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+.contenedor #imagen1{
+    filter: blur(10px);
+}
+
+.contenedor #imagen2, #imagen4, #imagen6{
+    filter: grayscale(100%);
+}
+
+.contenedor #imagen3{
+    filter: sepia(90%);
 }
