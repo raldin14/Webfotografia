@@ -1,21 +1,21 @@
 body{
     background-color: #02010a; 
     font-family: 'Dancing Script', cursive;
-    font-size: .5cm;
+    font-size: 12pt;
 }
-body img{
+img{
     box-shadow: 2px #02010a;
 }
 header{
     background: #5b7989;
     border-radius: 10px 10px 0 0; 
-    overflow: hidden;
+    overflow: auto;
+    color: #ffffff;
 }
-header h1{
-    color: white;
-    text-shadow: 2px #02010a;
-    float: left;
-    margin-left: 10px;
+
+header a{
+    text-decoration: none;
+    color: white !important;          
 }
 header li{
     list-style-type: none;
@@ -24,30 +24,22 @@ header li{
     padding: 10px;
     font-size: 0.5cm;
 }
-header a{
-    text-decoration: none;
-    color: white !important;          
-}
-header #menu-principal{
-    float: right;
-}
+
 #imagen-principal{
     text-align: center;
     background-color:  #82c3a6;
 }
+
 #imagen-principal img{
-    margin: 5vh 0;
+    margin: 5% 10%;
     width: 80%;
 }
+
 #galeria-image{
     text-align: center;
     display: flex;
     background-color: #d5c75f;
-}
-#galeria-image div{
-    width: 50%;
-    margin: 5vh 0;
-}
+}       
 
 #galeria-image img{
     height: 200px;
@@ -55,23 +47,12 @@ header #menu-principal{
     margin: 0 auto;
     border: solid 1px black;          
 }
-.contenido{
-    width: 900px;
-    margin: 0 20% 0 20%;
-}
-.contenido a{
-    color: black;
-    text-decoration: none;
-}
 footer{
     display: flex;
+    flex-direction: row;
     background: #C6d5c5;
     border-radius: 0 0 10px 10px; 
 }
-footer section[id^=column]{
-    margin-left: 2%;
-}
-
 #column3 img{
     width: 20px;
 }
@@ -89,7 +70,7 @@ footer section[id^=column]{
 }
 
 .contenedor {
-	display: flex;
+    display: flex;
     flex-direction: row;
     background-color: #d5c75f;
 }
@@ -97,12 +78,11 @@ footer section[id^=column]{
     width: 100%;
 }
 .contenedor > div {
-	text-align: center;
-	padding: 10px;
-	margin: 10px;
-	width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
 }
-
 .contenedor #imagen1{
     filter: blur(10px);
 }
@@ -113,4 +93,68 @@ footer section[id^=column]{
 
 .contenedor #imagen3{
     filter: sepia(90%);
+}
+.contenido a{
+    color: black;
+    text-decoration: none;
+}
+
+@media (min-width: 901px){
+    header h1{
+        color: white;
+        text-shadow: 2px #02010a;
+        float: left;
+        margin-left: 10px;
+    }
+    header #menu-principal{
+        float: right;
+    }
+    #galeria-image div{
+        width: 50%;
+        margin: 5% 10%;
+    }
+    footer section[id^=column]{
+        margin-left: 2%;
+    }
+    .contenido{
+        width: 900px;
+        margin: 0 20%;
+    }
+   
+}
+
+@media (max-width: 900px){
+    header{
+        text-align: center;
+    }
+
+    header h1{
+        text-shadow: 2px #02010a;
+    }
+    #galeria-image{
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        background-color: #d5c75f;
+    } 
+    #galeria-image div{
+        width: 100%;
+        margin: 10% 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }            
+    footer section[id^=column]{
+        margin-left: 10%;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor > div {
+        text-align: center;
+        margin: 5%;
+        width: 80%;
+    }
 }
