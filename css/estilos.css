@@ -1,7 +1,21 @@
+@keyframes cargaranimacion{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
 body{
     background-color: #02010a; 
     font-family: 'Dancing Script', cursive;
     font-size: 12pt;
+    
+}
+.contenido{    
+    animation: cargaranimacion 0.5s;
 }
 img{
     box-shadow: 2px #02010a;
@@ -12,10 +26,9 @@ header{
     overflow: auto;
     color: #ffffff;
 }
-
 header a{
-    text-decoration: none;
-    color: white !important;          
+    color: white !important;
+    text-decoration: none;         
 }
 header li{
     list-style-type: none;
@@ -42,8 +55,8 @@ header li{
 }       
 
 #galeria-image img{
-    height: 200px;
-    width: 80%;
+    height: 150px;
+    width: 100%;
     margin: 0 auto;
     border: solid 1px black;          
 }
@@ -140,6 +153,9 @@ footer{
     #galeria-image div{
         width: 100%;
         margin: 10% 0;
+    }
+    #galeria-image img{
+        width: 80%;         
     }
     footer{
         display: flex;
